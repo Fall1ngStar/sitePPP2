@@ -1,6 +1,6 @@
 .event{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 10px;
 }
@@ -8,7 +8,6 @@
 section{
     display: flex;
     flex-direction: column;
-    min-width: 800px;
     background: white;
 }
 
@@ -26,3 +25,30 @@ section{
     font-weight: bold;
 }
 
+.filler{
+    flex-grow: 3;
+    border: 3px solid #28daff;
+}
+
+.event-name{
+    border: 3px solid #28daff;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .event{
+        flex-direction: column;
+    }
+
+    section{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    section{
+        min-width: 500px;
+    }
+}
