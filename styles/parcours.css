@@ -37,6 +37,8 @@ section{
     text-align: center;
 }
 
+
+
 @media screen and (max-width: 700px){
     .event{
         flex-direction: column;
@@ -50,5 +52,9 @@ section{
 @media screen and (min-width: 700px){
     section{
         min-width: 500px;
+    }
+
+    .event:nth-child(odd){
+        flex-direction: row-reverse;
     }
 }
